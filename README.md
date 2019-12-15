@@ -7,6 +7,21 @@
 * Handlebars templating engine;
 * MySQL/MariaDB database.
 
+#### Database
+
+* Cat >0---|| Room
+* Dog >0---|| Room
+* Cat >0---0<Dog
+* Cat 0| --- 0<Friend
+* Dog 0| --- 0<Friend
+
+#### Todo
+
+* update room page:
+fill only first part of a room name, should display full room name
+* nullable
+* self
+
 ```
 npx express-generator --view=hbs
 npm install
