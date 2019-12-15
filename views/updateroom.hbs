@@ -1,0 +1,15 @@
+<div class="container" style="padding: 10% 0% 10% 0%">
+    <div class="bg-dark col-6 text-light p-4">
+        <h2 class="text-center">Update Room</h2>
+        <form id="updateRoom" action="/viewroom" method="post">
+            <label for="roomName" class="mt-3">Room Name:</label>
+            <input type="text" class="form-control" id="roomName" name="roomName" value={{room.roomName}}>
+            <label for="roomArea" class="mt-3">Area:</label>
+            <input type="number" class="form-control" id="roomArea" name="roomArea" value={{room.roomArea}}>
+            <br>
+            <button type="button" class="btn btn-primary" onclick="updateRoom({{room.roomID}})">Update
+                Room</button>
+        </form>
+    </div>
+    <br>
+</div>
