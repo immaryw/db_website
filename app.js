@@ -21,6 +21,14 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+// app.use('/addcat', require('./routes/addcat'));
+// app.use('/adddog', require('./routes/adddog'));
+app.use('/addroom', require('./routes/addroom'));
+// app.use('/addfriend', require('./routes/addfriend'));
+// app.use('/viewcat', require('./routes/viewcat'));
+// app.use('/viewdog', require('./routes/viewdog'));
+app.use('/viewroom', require('./routes/viewroom'));
+// app.use('/viewfriend', require('./routes/viewfriend'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

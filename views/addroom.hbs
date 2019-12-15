@@ -1,0 +1,17 @@
+<div class="container bg-dark rounded mt-4 p-4" class="addRoomForm">
+    <h2 class="text-center">Add a Room</h2>
+    <form id="newRoom" action="/addroom" method="POST">
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="roomName">Room's Name (Required)</label>
+                <input type="text" class="form-control" id="roomName" name="roomName" placeholder="Enter Name" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="roomArea">Area (Required)</label>
+                <input type="number" class="form-control" id="roomArea" name="roomArea" placeholder="0" required>
+            </div>
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit">Add This Room</button>
+    </form>
+</div>

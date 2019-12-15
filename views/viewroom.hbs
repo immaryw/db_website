@@ -1,0 +1,24 @@
+<div class="container" style="padding: 10% 0% 10% 0%">
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Room ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Area</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each room}}
+            <tr>
+                <td>{{roomID}}</td>
+                <td>{{roomName}}</td>
+                <td>{{roomArea}}</td>
+                <td><button type="button" class="btn btn-danger" onclick="deletePet({{roomID}})">Delete</button></td>
+                <td><a class="btn btn-primary" href="/viewroom/{{roomID}}" role="button">Edit</a></td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
