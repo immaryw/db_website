@@ -19,7 +19,7 @@
 
 * update room page:
 fill only first part of a room name, should display full room name
-* nullable
+* nullable:room.area,cat.room, dog.room
 * self
 
 ```

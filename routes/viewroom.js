@@ -92,7 +92,6 @@ module.exports = function(){
         var sql = "SELECT room.room_id as roomID, room.name as roomName, area as roomArea FROM room WHERE room.room_id = ?;";
         var updates = id;//[id]
         console.log(updates);
-        alert(updates);
 
         mysql.pool.query(sql, updates, function(error, results, fields){
             if(error){
