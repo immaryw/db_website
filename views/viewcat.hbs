@@ -1,0 +1,35 @@
+<div class="container" style="padding: 10% 0% 10% 0%">
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Cat ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Breed</th>
+            <th scope="col">Color</th>
+            <th scope="col">Hair</th>
+            <th scope="col">Age</th>
+            <th scope="col">Weight</th>
+            <th scope="col">Room</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each cat}}
+            <tr>
+                <td value="sid">{{catID}}</td>
+                <td>{{catName}}</td>
+                <td>{{catBreed}}</td>
+                <td>{{catColor}}</td>
+                <td>{{catHair}}</td>
+                <td>{{catAge}}</td>
+                <td>{{catWeight}}</td>
+                <td>{{catRoom}}</td>
+                <td><button type="button" class="btn btn-danger" onclick="deleteCat({{catID}})">Delete</button></td>
+                <td><a class="btn btn-primary" href="/viewcat/{{catID}}" role="button">Edit</a></td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
+

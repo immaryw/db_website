@@ -1,0 +1,52 @@
+<div class="container bg-dark rounded mt-4 p-3" class="addcatForm">
+    <h2 class="text-center">Add Cat</h2>
+    <form id="addCat" action="/addcat" method="post">
+        <div class="form-row mb-3">
+            <div class="col">
+                <label for="catName">Name:</label>
+                <input type="text" class="form-control" name="catName" placeholder="Cat name (Required)" required>
+            </div>
+            <div class="col">
+                <label for="catBreed">Breed:</label>
+                <input type="text" class="form-control" name="catBreed" placeholder="Breed (Required)" required>
+            </div>
+        </div>
+        <div class="form-row mb-3">
+            <div class="col">
+                <label for="catColor">Color:</label>
+                <input type="text" class="form-control" name="catColor" placeholder="Cat color (Required)" required>
+            </div>
+            <div class="col">
+                <label for="catHair">Hair:</label>
+                <input type="text" class="form-control" name="catHair" placeholder="Hair (Required)" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="catAge">Age (month):</label>
+                <input type="number" class="form-control" id="catAge" name="catAge" optional>
+                <div class="invalid-feedback">
+                    Please Provide a valid age.
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="catWeight">Weight (LBs):</label>
+                <input type="number" class="form-control" id="catWeight" name="catWeight" optional>
+            </div>
+        </div>
+        <div class="form-row">             
+            <div class="form-group col-md-6">
+                <label for="room">Room:</label>
+                <select class="form-control" name="room" id="room-selector">
+                    <option value="999" selected>Select Room</option>
+                    {{#each room}}
+                        <option value={{this.id}}>{{name}}</option>
+                    {{/each}}
+                </select><br>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Add This Cat</button>
+    </form>
+</div>

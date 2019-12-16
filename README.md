@@ -19,8 +19,10 @@
 
 * update room page:
 fill only first part of a room name, should display full room name
-* nullable:room.area,cat.room, dog.room
-* self
+;same problem with cat.color
+* nullable:room.area, cat.room(if null, update not working), dog.room
+* self relation
+* age: invalid-feedback, DOB(https://www.w3schools.com/sql/sql_default.asp)
 
 ```
 npx express-generator --view=hbs
