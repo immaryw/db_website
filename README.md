@@ -2,7 +2,7 @@
 
 #### Status: In-Progress
 
-* Implement CRUD (Create, Read, Update, D) functions; 
+* Implement CRUD (Create, Read, Update, Delete) functions; 
 * Node.js and Express framework;
 * Handlebars templating engine;
 * MySQL/MariaDB database.
